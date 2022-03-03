@@ -16,4 +16,14 @@
 2. references
 
 
+3. pointers
+
+   create a string
+   loop over the characters with iterators
+   wherever we find space, capitalize the letter after (toupper)
+   
+   you'll need to have logic in the loop that detects if it ==
+   string.begin(), and also keeps track of whether there is a space,
+   and if so, remembers to update the next character
+   
    
