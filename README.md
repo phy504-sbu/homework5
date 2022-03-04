@@ -6,24 +6,34 @@
 > discuss this on slack or in class, but when it comes to writing the code,
 > you are expected to write it yourself (and not just copy from someone).
 
-1. Create a struct with t, x, y.  Now "evolve time" for t = 0, 20
+1. We want to compute the position of a projectile at several intervals in time.
 
-   Take an initial velocity (v) and an angle and evolve the trajectory of a projectile.
-   
-   If you start at 0, keep computing until y < 0.
-   
-   
+   Create a struct that holds the state of the projectile at one
+   instance in time: t, x, y
+
+   Now as the user for the initial velocity magnitude, angle above the
+   horizontal, and time interval (dt) to output (choosing 10 m/s, 45
+   degrees, and 0.1 s is reasonable, for instance).
+
+   Now use a while loop and loop so long as y >= 0.  Increment the
+   time by dt and compute the current position of the projectile and
+   store it in the vector.  Assume that the projectile starts at (0, 0).
+
+   Finally, loop over the vector and output the time, x, and y as a
+   table (3 columns, with each row a single instance in time).
+
 2. references
 
 
-3. pointers
+3. Initialize a string with `"may the force be with you"` (note: all lowercase).
 
-   create a string
-   loop over the characters with iterators
-   wherever we find space, capitalize the letter after (toupper)
-   
-   you'll need to have logic in the loop that detects if it ==
-   string.begin(), and also keeps track of whether there is a space,
-   and if so, remembers to update the next character
-   
-   
+   Now loop over the characters in the string using an iterator
+   (e.g. `.begin()` and `.end()`).  Your goal is to capitalize each word.
+   The first character clearly needs to be capitalized.  Then in each iteration,
+   check if the current character is a space, and if so, set a flag such that in the
+   next iteration you capitalize that character.
+
+   You can use the method ``std::toupper()`` to convert a single
+   character to be uppercase.
+
+   When you are done, output the transformed string.
