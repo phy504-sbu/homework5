@@ -30,9 +30,10 @@
 2. a. Initialize a string with `"may the force be with you"` (note: all lowercase).
 
       Now loop over the characters in the string using an **iterator**
-      (e.g. `.begin()` and `.end()`).  Your goal is to capitalize each word.
-      The first character clearly needs to be capitalized.  Then in each iteration,
-      check if the current character is a space, and if so, set a flag such that in the
+      (e.g. `.begin()` and `.end()`).  Your goal is to capitalize the
+      first letter of each word.  The first character clearly needs to
+      be capitalized.  Then in each iteration, check if the current
+      character is a space, and if so, set a flag such that in the
       next iteration you capitalize that character.
 
       You can use the method ``std::toupper()`` to convert a single
